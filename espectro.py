@@ -77,21 +77,21 @@ class Espectro(object):
         if self.io >= 4:
             if clase_obra == 1:
                 self.nps = 'E'
-            elif clase_obra == 2 or clase_obra == 3:
+            elif clase_obra in [2, 3]:
                 self.nps = 'D'
             else:
                 self.nps = 'C'
         elif self.io >= 3:
             if clase_obra == 1:
                 self.nps = 'D'
-            elif clase_obra == 2 or clase_obra == 3:
+            elif clase_obra in [2, 3]:
                 self.nps = 'C'
             else:
                 self.nps = 'B'
         elif self.io >= 2:
             if clase_obra == 1:
                 self.nps = 'C'
-            elif clase_obra == 2 or clase_obra == 3:
+            elif clase_obra in [2, 3]:
                 self.nps = 'B'
             else:
                 self.nps = 'A'
