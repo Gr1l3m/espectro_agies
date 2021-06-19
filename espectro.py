@@ -260,7 +260,7 @@ class Espectro(object):
         # Aceleracion maxima del suelo
         amsd = 0.4 * scd
 
-        for T in range(0, len(self.arreglo_tiempo)):
+        for T in range(len(self.arreglo_tiempo)):
             if self.arreglo_tiempo[T] <= ts:
                 self.espectro_resultado[T, 0] = self.arreglo_tiempo[T]
                 self.espectro_resultado[T, 1] = scd
